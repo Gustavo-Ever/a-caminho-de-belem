@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A Caminho de Belém · 24 dias de Natal em família</title>
+<meta name="description" content="Um calendário de Natal bíblico para imprimir: 24 dias com história da Bíblia, versículo com gestos, perguntas, oração e uma peça do presépio para pintar, recortar e montar. No dia 24 o presépio fica completo, feito pelo seu filho.">
+<meta name="theme-color" content="#1f2a5a">
+<meta property="og:title" content="A Caminho de Belém · 24 dias de Natal em família">
+<meta property="og:description" content="No dia 24, o presépio fica completo, feito pelas mãos do seu filho. PDF para imprimir, 10 minutos por dia, de 3 a 10 anos.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://a-caminho-de-belem.surge.sh/assets/img/01_capa.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="icon" href="https://a-caminho-de-belem.surge.sh/assets/img/01_capa.webp">
+
+<!-- PIXEL META AQUI -->
+<!-- UTMIFY AQUI -->
+
+<style>
+:root{
+  --azul:#1f2a5a;
+  --azul-claro:#2c3a72;
+  --creme:#fff8ec;
+  --creme-2:#fdf2df;
+  --dourado:#f2b84b;
+  --dourado-claro:#ffd36b;
+  --terracota:#d9734e;
+  --texto:#1f2a5a;
+  --texto-suave:#4a5480;
+  --borda:#e6d9bf;
+  --papel:#fffdf8;
+  --sombra:0 10px 30px rgba(31,42,90,.10);
+  --sombra-forte:0 18px 46px rgba(31,42,90,.18);
+  --raio:16px;
+  --largura:1080px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--creme);
+  color:var(--texto);
+  font-family:'Nunito',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-size:18px;
+  line-height:1.65;
+  overflow-x:hidden;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+
+h1,h2,h3{font-family:'Fredoka',sans-serif;line-height:1.15;margin:0 0 .5em;font-weight:600}
+h1{font-size:clamp(2rem,6.2vw,3.4rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.55rem,4.4vw,2.3rem)}
+h3{font-size:clamp(1.1rem,2.8vw,1.35rem)}
+p{margin:0 0 1em;max-width:60ch}
+
+.envol{
+  width:100%;
+  max-width:var(--largura);
+  margin:0 auto;
+  padding:0 16px;
+}
+.centro{text-align:center}
+.centro p{margin-left:auto;margin-right:auto}
+.selo{
+  font-family:'Caveat',cursive;
+  font-size:1.35rem;
+  color:var(--dourado);
+  display:block;
+  margin-bottom:.35rem;
+}
+.nota{font-size:.95rem;color:var(--texto-suave)}
+.corte{
+  border:2px dashed var(--terracota);
+  border-radius:var(--raio);
+  padding:34px 20px;
+  position:relative;
+  background:
+    radial-gradient(circle at 12px 12px, transparent 9px, var(--terracota) 9px, var(--terracota) 10px, transparent 10px) 0 0/24px 24px repeat-x,
+    var(--papel);
+}
+.corte::before,
+.corte::after{
+  content:'✂';
+  position:absolute;
+  font-size:1.3rem;
+  color:var(--terracota);
+  background:var(--creme);
+  padding:2px 8px;
+}
+.corte::before{top:-14px;left:26px}
+.corte::after{bottom:-14px;right:26px}
+
+/* ============ HERO ============ */
+.hero{
+  background:
+    radial-gradient(1.5px 1.5px at 12% 18%, rgba(255,255,255,.9) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 28% 62%, rgba(255,255,255,.75) 50%, transparent 51%),
+    radial-gradient(1.7px 1.7px at 44% 12%, rgba(255,255,255,.85) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 63% 40%, rgba(255,255,255,.7) 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 78% 24%, rgba(255,255,255,.9) 50%, transparent 51%),
+    radial-gradient(1.1px 1.1px at 88% 66%, rgba(255,255,255,.7) 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 35% 82%, rgba(255,255,255,.65) 50%, transparent 51%),
+    linear-gradient(170deg,#161f45 0%, var(--azul) 55%, #243061 100%);
+  color:var(--creme);
+  padding:52px 0 60px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:'';
+  position:absolute;
+  left:50%;top:-120px;
+  width:520px;height:520px;
+  transform:translateX(-50%);
+  background:radial-gradient(circle, rgba(255,211,107,.28) 0%, rgba(255,211,107,0) 68%);
+  pointer-events:none;
+}
+.hero .envol{position:relative;z-index:1}
+.hero h1{color:#fff}
+.hero .sub{
+  font-size:clamp(1.02rem,2.7vw,1.22rem);
+  color:#e9e2f5;
+  max-width:56ch;
+  margin:0 auto 26px;
+}
+.hero .selo{color:var(--dourado-claro);font-size:1.5rem}
+.livro{
+  width:min(280px,62vw);
+  margin:0 auto 26px;
+  transform:rotate(-1.6deg);
+  filter:drop-shadow(0 22px 34px rgba(0,0,0,.45));
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.5em;
+  background:linear-gradient(180deg,var(--dourado-claro),var(--dourado));
+  color:#3a2a08;
+  font-family:'Fredoka',sans-serif;
+  font-weight:600;
+  font-size:clamp(1.05rem,3.1vw,1.28rem);
+  padding:16px 30px;
+  border:none;
+  border-radius:999px;
+  text-decoration:none;
+  box-shadow:0 8px 0 #c8912c, 0 14px 26px rgba(0,0,0,.28);
+  transition:transform .12s ease, box-shadow .12s ease;
+  cursor:pointer;
+  text-align:center;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 0 #c8912c, 0 18px 32px rgba(0,0,0,.3)}
+.btn:active{transform:translateY(4px);box-shadow:0 4px 0 #c8912c}
+.btn .preco{opacity:.72;font-weight:500}
+
+/* botão secundário: amostra grátis */
+.btn-sec{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.5em;
+  background:transparent;
+  color:var(--creme);
+  border:2px solid rgba(255,248,236,.45);
+  font-family:'Fredoka',sans-serif;
+  font-weight:500;
+  font-size:clamp(.98rem,2.8vw,1.12rem);
+  padding:13px 26px;
+  border-radius:999px;
+  text-decoration:none;
+  transition:transform .12s ease, background .12s ease, border-color .12s ease;
+  cursor:pointer;
+  text-align:center;
+}
+.btn-sec:hover{background:rgba(255,248,236,.12);border-color:var(--creme);transform:translateY(-2px)}
+.btn-sec:active{transform:translateY(1px)}
+.par-botoes{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center}
+.mini{
+  display:block;
+  margin-top:16px;
+  font-size:.92rem;
+  color:#cfc6e8;
+}
+.hero-stats{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px 26px;
+  margin-top:30px;
+  font-size:.95rem;
+  color:#d8d0ee;
+}
+.hero-stats span::before{content:'✦';color:var(--dourado);margin-right:.45em}
+
+/* ============ SEÇÕES ============ */
+.secao{padding:56px 0}
+.secao.azul{background:var(--azul);color:var(--creme)}
+.secao.azul h2,.secao.azul h3{color:#fff}
+.secao.azul p{color:#dfe4f7}
+.azul .nota{color:#b9c1e4}
+
+/* passos */
+.passos{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.passos li{
+  background:var(--papel);
+  color:var(--texto);
+  border-radius:var(--raio);
+  padding:20px 20px 20px 66px;
+  position:relative;
+  box-shadow:var(--sombra);
+}
+.passos li .num{
+  position:absolute;left:18px;top:18px;
+  width:34px;height:34px;
+  border-radius:50%;
+  background:var(--dourado);
+  color:#3a2a08;
+  font-family:'Fredoka',sans-serif;
+  font-weight:600;
+  display:grid;place-items:center;
+  box-shadow:0 3px 0 #c8912c;
+}
+.passos li strong{display:block;font-family:'Fredoka',sans-serif;font-size:1.08rem;margin-bottom:.15rem}
+.passos li p{margin:0;font-size:.97rem;color:var(--texto-suave)}
+
+/* grade de folhas */
+.folhas{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:22px;
+  margin-top:26px;
+}
+.folha{
+  background:var(--papel);
+  padding:12px 12px 16px;
+  border-radius:12px;
+  box-shadow:var(--sombra);
+  transform:rotate(var(--rot,0deg));
+  transition:transform .18s ease;
+}
+.folha:hover{transform:rotate(0deg) translateY(-4px)}
+.folha img{border-radius:7px;box-shadow:0 4px 14px rgba(31,42,90,.16)}
+.folha figcaption{
+  font-family:'Fredoka',sans-serif;
+  font-size:.98rem;
+  text-align:center;
+  margin-top:10px;
+  color:var(--texto);
+}
+.folha figcaption small{display:block;font-family:'Nunito',sans-serif;font-size:.82rem;color:var(--texto-suave);font-weight:400;margin-top:2px}
+
+/* etiquetas */
+.etiquetas{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:24px}
+.etiqueta{
+  background:var(--papel);
+  color:var(--texto);
+  border-radius:10px;
+  padding:20px 22px;
+  box-shadow:var(--sombra);
+  border-top:4px solid var(--dourado);
+}
+.etiqueta:nth-child(2){border-top-color:var(--terracota)}
+.etiqueta:nth-child(3){border-top-color:var(--azul-claro)}
+.etiqueta h3{font-size:1.08rem;margin-bottom:.35rem}
+.etiqueta p{margin:0;font-size:.95rem;color:var(--texto-suave)}
+
+/* lista */
+.checklist{list-style:none;margin:0;padding:0;display:grid;gap:11px;max-width:62ch}
+.checklist li{position:relative;padding-left:34px;font-size:1.02rem}
+.checklist li::before{
+  content:'';
+  position:absolute;left:0;top:.42em;
+  width:19px;height:19px;
+  border-radius:50%;
+  background:var(--dourado);
+}
+.checklist li::after{
+  content:'';
+  position:absolute;left:6px;top:.72em;
+  width:8px;height:4px;
+  border-left:2.5px solid #3a2a08;
+  border-bottom:2.5px solid #3a2a08;
+  transform:rotate(-45deg);
+}
+
+/* oferta */
+.oferta{
+  background:var(--azul);
+  color:var(--creme);
+  border-radius:20px;
+  padding:42px 26px;
+  text-align:center;
+  box-shadow:var(--sombra-forte);
+  position:relative;
+  overflow:hidden;
+}
+.oferta::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(1.4px 1.4px at 18% 30%, rgba(255,255,255,.7) 50%, transparent 51%),
+             radial-gradient(1.2px 1.2px at 72% 22%, rgba(255,255,255,.6) 50%, transparent 51%),
+             radial-gradient(1.5px 1.5px at 88% 68%, rgba(255,255,255,.65) 50%, transparent 51%),
+             radial-gradient(1.1px 1.1px at 38% 78%, rgba(255,255,255,.55) 50%, transparent 51%);
+  pointer-events:none;
+}
+.oferta > *{position:relative;z-index:1}
+.oferta .capa{width:min(200px,48vw);margin:0 auto 20px;transform:rotate(-1.4deg);filter:drop-shadow(0 14px 24px rgba(0,0,0,.4))}
+.preco{
+  font-family:'Fredoka',sans-serif;
+  font-size:clamp(2.6rem,10vw,4rem);
+  color:var(--dourado-claro);
+  font-weight:700;
+  line-height:1;
+  margin:.2em 0 .1em;
+}
+.preco span{display:block;font-family:'Nunito',sans-serif;font-size:.95rem;font-weight:400;color:#cdd3ee;margin-top:10px}
+.selos{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:22px 0 26px}
+.selos span{
+  border:1.5px solid rgba(255,211,107,.45);
+  color:#f0e8ff;
+  border-radius:999px;
+  padding:7px 15px;
+  font-size:.86rem;
+}
+
+/* garantia */
+.garantia{
+  background:var(--papel);
+  border-radius:var(--raio);
+  padding:26px 24px;
+  box-shadow:var(--sombra);
+  text-align:center;
+  max-width:620px;
+  margin:0 auto;
+}
+.garantia p{margin:0;font-size:1.05rem}
+.garantia .ico{font-size:1.8rem;display:block;margin-bottom:.3em}
+
+/* FAQ */
+.faq{max-width:760px;margin:0 auto}
+details{
+  background:var(--papel);
+  border-radius:12px;
+  margin-bottom:12px;
+  box-shadow:0 3px 12px rgba(31,42,90,.06);
+  border:1px solid var(--borda);
+}
+summary{
+  cursor:pointer;
+  font-family:'Fredoka',sans-serif;
+  font-weight:500;
+  font-size:1.05rem;
+  padding:18px 52px 18px 20px;
+  position:relative;
+  list-style:none;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:'+';
+  position:absolute;right:20px;top:50%;
+  transform:translateY(-50%);
+  font-size:1.5rem;
+  color:var(--terracota);
+  font-family:'Nunito',sans-serif;
+  line-height:1;
+}
+details[open] summary::after{content:'–'}
+details .resposta{padding:0 20px 20px;font-size:.98rem;color:var(--texto-suave)}
+details[open] summary{border-bottom:1px dashed var(--borda);margin-bottom:16px}
+
+/* chamada final */
+.final{
+  background:linear-gradient(0deg,rgba(20,26,55,.86),rgba(20,26,55,.86)),
+             url('assets/img/cena-presepio-noite.webp') center/cover no-repeat;
+  color:#fff;
+  text-align:center;
+}
+.final h2{color:#fff}
+.final p{color:#e4e7f6;margin-left:auto;margin-right:auto}
+
+/* rodapé */
+footer{
+  background:#141b3d;
+  color:#a9b0d6;
+  padding:34px 0 30px;
+  font-size:.87rem;
+  text-align:center;
+}
+footer a{color:#cdd3ee}
+footer p{margin:0 auto .5em;max-width:60ch}
+
+/* botão fixo mobile */
+.fixo{
+  display:none;
+  position:fixed;
+  left:0;right:0;bottom:0;
+  z-index:60;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(255,248,236,.97);
+  border-top:1px solid var(--borda);
+  box-shadow:0 -6px 20px rgba(31,42,90,.13);
+}
+.fixo .btn{width:100%;box-shadow:0 5px 0 #c8912c}
+.hero-compacta .fixo{display:block}
+.hero-compacta{height:0;overflow:hidden}
+
+/* depoimentos: reservado */
+.depoimentos{
+  border:2px dashed var(--borda);
+  border-radius:var(--raio);
+  padding:34px 22px;
+  text-align:center;
+  color:var(--texto-suave);
+  background:rgba(255,255,255,.5);
+}
+.depoimentos strong{display:block;font-family:'Fredoka',sans-serif;color:var(--texto);font-size:1.1rem;margin-bottom:.4em}
+
+@media (max-width:640px){
+  body{font-size:17px}
+  body.hero-compacta{padding-bottom:84px}
+  .secao{padding:42px 0}
+  .corte{padding:26px 14px}
+  .passos li{padding:18px 16px 18px 60px}
+  .passos li .num{left:15px;top:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="topo">
+  <div class="envol centro">
+    <span class="selo">de 1º a 24 de dezembro</span>
+    <h1>Esse ano, o presépio lá de casa <span style="white-space:nowrap">quem monta é ele.</span></h1>
+    <p class="sub">24 dias de Natal em família com a Bíblia: uma história e uma peça do presépio por dia. No dia 24, o presépio está completo, feito pelas mãos do seu filho.</p>
+
+    <img class="livro" src="assets/img/01_capa.webp" width="794" height="1123" alt="Capa do livro A Caminho de Belém: 24 dias de Natal em família, com a Bíblia" fetchpriority="high">
+
+    <div class="par-botoes">
+      <a class="btn" href="#" data-compra>Quero o meu por R$ 19,90</a>
+      <a class="btn-sec" href="#" data-amostra>Ver o dia 1 grátis</a>
+    </div>
+    <span class="mini">PDF para imprimir · imprima só a página do dia · acesso imediato no e-mail · garantia de 7 dias</span>
+
+    <div class="hero-stats">
+      <span>131 páginas para imprimir</span>
+      <span>3 a 10 anos</span>
+      <span>10 minutinhos por dia</span>
+    </div>
+  </div>
+</header>
+
+<!-- ================= VÍDEO ================= -->
+<section class="secao centro">
+  <div class="envol">
+    <h2>Veja como funciona</h2>
+    <p class="nota" style="margin-bottom:22px">30 segundos para entender o que chega no seu e-mail.</p>
+    <div style="max-width:340px;margin:0 auto">
+      <video controls preload="none" playsinline poster="assets/video/poster.jpg"
+             style="width:100%;border-radius:14px;box-shadow:var(--sombra-forte)">
+        <source src="assets/video/explicativo.mp4" type="video/mp4">
+        Seu navegador não reproduz este vídeo.
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="secao" style="background:var(--creme-2)">
+  <div class="envol">
+    <div class="centro">
+      <span class="selo" style="color:var(--terracota)">como funciona</span>
+      <h2>10 minutos por dia, do 1º ao 24 de dezembro</h2>
+      <p class="nota">Cada dia tem a mesma rotina. Você lê, vocês conversam, ela pinta, e o presépio vai crescendo na mesa.</p>
+    </div>
+
+    <ol class="passos" style="margin-top:30px">
+      <li>
+        <span class="num">1</span>
+        <strong>Leia a história</strong>
+        <p>Uma narrativa bíblica ilustrada, com as falas marcadas, para ler em voz alta antes de dormir.</p>
+      </li>
+      <li>
+        <span class="num">2</span>
+        <strong>Conversem e orem juntos</strong>
+        <p>Um versículo com gestos para decorar, duas perguntas para a conversa e uma oração curta.</p>
+      </li>
+      <li>
+        <span class="num">3</span>
+        <strong>Pinte ou faça a atividade</strong>
+        <p>Um desenho para colorir (3 a 6 anos) e uma atividade — caça-palavras, labirinto, palavras embaralhadas (7 a 10 anos).</p>
+      </li>
+      <li>
+        <span class="num">4</span>
+        <strong>Recorte a peça e monte o presépio</strong>
+        <p>Uma peça por dia: pintar, recortar, colar na mesa. No dia 24 ela é o menino Jesus.</p>
+      </li>
+    </ol>
+
+    <div class="folhas">
+      <figure class="folha" style="--rot:-1.8deg">
+        <img src="assets/img/d01_0_historia.webp" width="794" height="1123" loading="lazy" alt="Página de história do dia 1, com a figura do anjo Gabriel e Maria" >
+        <figcaption>A história<small>para ler em voz alta</small></figcaption>
+      </figure>
+      <figure class="folha" style="--rot:1.4deg">
+        <img src="assets/img/d01_1_familia.webp" width="794" height="1124" loading="lazy" alt="Página do momento em família: versículo com gestos, perguntas e oração">
+        <figcaption>O momento em família<small>versículo, perguntas e oração</small></figcaption>
+      </figure>
+      <figure class="folha" style="--rot:-1.1deg">
+        <img src="assets/img/d01_2_colorir.webp" width="794" height="1124" loading="lazy" alt="Página de desenho para colorir do dia 1">
+        <figcaption>Colorir<small>para os pequenos</small></figcaption>
+      </figure>
+      <figure class="folha" style="--rot:1.9deg">
+        <img src="assets/img/d01_3_atividade.webp" width="794" height="1123" loading="lazy" alt="Página da atividade do dia 1">
+        <figcaption>A atividade<small>para os maiores</small></figcaption>
+      </figure>
+      <figure class="folha" style="--rot:-1.5deg">
+        <img src="assets/img/d01_4_peca.webp" width="794" height="1123" loading="lazy" alt="Página da peça do presépio do dia 1 para pintar e recortar">
+        <figcaption>A peça do dia<small>pinta, recorta, monta</small></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DIA 24 ================= -->
+<section class="secao">
+  <div class="envol">
+    <div class="corte centro">
+      <span class="selo" style="color:var(--terracota)">no dia 24</span>
+      <h2>O presépio fica completo. Feito por ela.</h2>
+      <p>A manjedoura fica vazia até o último dia, quando entra o menino Jesus — com as mãos da sua criança.</p>
+
+      <div style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:24px;text-align:center">
+        <div>
+          <img src="assets/img/cena-presepio-completo.webp" width="1433" height="800" loading="lazy" alt="Presépio completo na manjedoura, com Maria, José, o menino Jesus, os reis magos e os animais" style="border-radius:12px;box-shadow:var(--sombra)">
+        </div>
+        <div>
+          <img src="assets/img/04_mapa_presepio.webp" width="794" height="1123" loading="lazy" alt="Mapa das 24 peças do presépio, uma para cada dia de dezembro" style="border-radius:12px;box-shadow:var(--sombra);max-width:300px;margin:0 auto">
+        </div>
+      </div>
+
+      <p style="margin:22px auto 0;max-width:56ch">
+        São 24 peças, uma por dia: Maria, o anjo Gabriel, José, o burrinho, o estábulo, a manjedoura, o boi,
+        os pastores, as ovelhas, a estrela, os três magos, o camelo… e, no último dia, o menino Jesus.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= O QUE VEM ================= -->
+<section class="secao" style="background:var(--creme-2)">
+  <div class="envol">
+    <div class="centro">
+      <span class="selo" style="color:var(--terracota)">o que vem no pdf</span>
+      <h2>Tudo isso, em 131 páginas</h2>
+    </div>
+    <div style="display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));margin-top:28px;align-items:center">
+      <div>
+        <ul class="checklist">
+          <li>24 histórias bíblicas ilustradas, da anuncição ao nascimento</li>
+          <li>24 versículos com gestos para decorar brincando</li>
+          <li>24 desenhos para colorir</li>
+          <li>24 atividades: caça-palavras, labirinto, palavras embaralhadas e verdadeiro ou falso</li>
+          <li>24 peças do presépio para pintar, recortar e montar</li>
+          <li>Página de "como usar" e plano dos 24 dias</li>
+          <li>Certificado de "presépio completo" e gabarito das atividades</li>
+        </ul>
+      </div>
+      <div>
+        <img src="assets/img/03_plano.webp" width="794" height="1124" loading="lazy" alt="Página com o plano dos 24 dias de dezembro" style="border-radius:12px;box-shadow:var(--sombra);max-width:320px;margin:0 auto">
+        <img src="assets/img/97_certificado.webp" width="794" height="1124" loading="lazy" alt="Certificado de presépio completo para a criança" style="border-radius:12px;box-shadow:var(--sombra);max-width:320px;margin:16px auto 0;transform:rotate(1.4deg)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PARA QUEM É ================= -->
+<section class="secao">
+  <div class="envol">
+    <div class="centro">
+      <span class="selo" style="color:var(--terracota)">para quem é</span>
+      <h2>Feito para a mesa da sua casa</h2>
+    </div>
+
+    <div class="etiquetas">
+      <div class="etiqueta">
+        <h3>Mães e pais</h3>
+        <p>Que querem um Natal com mais Jesus e menos tela, sem precisar planejar 24 dias de atividade.</p>
+      </div>
+      <div class="etiqueta">
+        <h3>Avós e madrinhas</h3>
+        <p>Que querem dar um presente que dura 24 dias, em vez de mais uma coisa embrulhada.</p>
+      </div>
+      <div class="etiqueta">
+        <h3>Tias do ministério e catequistas</h3>
+        <p>Há uma versão com licença para a turma toda, disponível no checkout.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:30px;text-align:center">
+      <img src="assets/img/cena-familia-montando.webp" width="1433" height="800" loading="lazy" alt="Família montando o presépio de papel na mesa, ao lado da árvore de Natal" style="width:100%;border-radius:14px;box-shadow:var(--sombra);max-width:760px;margin:0 auto">
+      <p class="nota" style="margin-top:14px">Uma história por dia, uma peça por dia, e a mesa vai crescendo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OFERTA ================= -->
+<section class="secao azul">
+  <div class="envol">
+    <div class="oferta">
+      <img class="capa" src="assets/img/01_capa.webp" width="794" height="1123" loading="lazy" alt="Capa do livro A Caminho de Belém">
+      <h3 style="margin:0">A Caminho de Belém · PDF completo</h3>
+      <div class="preco">R$ 19,90<span>pagamento único · sem mensalidade</span></div>
+      <div class="selos">
+        <span>Pix ou cartão</span>
+        <span>Acesso imediato no e-mail</span>
+        <span>Garantia de 7 dias</span>
+      </div>
+      <div class="par-botoes">
+        <a class="btn" href="#" data-compra>Quero começar dia 1º de dezembro</a>
+        <a class="btn-sec" href="#" data-amostra>Antes, ver o dia 1 grátis</a>
+      </div>
+    </div>
+
+    <div class="garantia" style="margin-top:26px">
+      <span class="ico">🤍</span>
+      <p><strong>Garantia de 7 dias.</strong> Se em 7 dias você achar que não é pra sua família, devolvemos 100% do valor. Sem perguntas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEPOIMENTOS (RESERVADO) ================= -->
+<section class="secao" style="padding-top:0">
+  <div class="envol">
+    <!-- depoimentos reais entram aqui depois -->
+    <div class="depoimentos">
+      <strong>Quem já usou vai contando aqui</strong>
+      As primeiras famílias que receberam o livro estão chegando. Quando elas autorizarem, os depoimentos entram nesta parte.
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="secao" style="background:var(--creme-2)">
+  <div class="envol">
+    <div class="centro" style="margin-bottom:26px">
+      <span class="selo" style="color:var(--terracota)">perguntas frequentes</span>
+      <h2>Dúvidas de mãe para mãe</h2>
+    </div>
+
+    <div class="faq">
+      <details open>
+        <summary>É físico?</summary>
+        <div class="resposta">Não. É um PDF que você recebe no e-mail logo após o pagamento e imprime em casa ou numa gráfica rápida.</div>
+      </details>
+      <details>
+        <summary>Vai sair caro para imprimir?</summary>
+        <div class="resposta">Não precisa imprimir o livro inteiro. Você imprime <strong>só a página do dia</strong> — a história, o versículo e a peça do presépio daquele dia. São umas 3 a 4 folhas por dia, e no dia 24 é só a última. Também funciona em preto e branco. E se não tiver impressora, dá para imprimir na papelaria perto de casa, ou até no trabalho, do jeito que for mais fácil.</div>
+      </details>
+      <details>
+        <summary>Preciso de impressora colorida?</summary>
+        <div class="resposta">Não. Funciona em preto e branco; as peças e os desenhos são para pintar, então a cor sai do lápis da criança.</div>
+      </details>
+      <details>
+        <summary>Serve para católicos e evangélicos?</summary>
+        <div class="resposta">Sim. Conta a história do nascimento de Jesus como está na Bíblia, sem termos de uma denominação só. O texto bíblico é da Bíblia Livre (CC BY 4.0).</div>
+      </details>
+      <details>
+        <summary>Qual idade?</summary>
+        <div class="resposta">De 3 a 10 anos. Os menores colorem e os maiores fazem as atividades e leem junto com você.</div>
+      </details>
+      <details>
+        <summary>E se eu começar depois do dia 1º?</summary>
+        <div class="resposta">Sem problema: dá para fazer 2 dias juntos até alcançar o ritmo.</div>
+      </details>
+      <details>
+        <summary>Posso usar com a turma da igreja ou da escola?</summary>
+        <div class="resposta">O PDF é para uso familiar. Para turma há a licença do Kit Turma, oferecida no checkout.</div>
+      </details>
+      <details>
+        <summary>Como recebo?</summary>
+        <div class="resposta">Por e-mail, na hora, depois do Pix ou cartão aprovado.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHAMADA FINAL ================= -->
+<section class="secao final">
+  <div class="envol">
+    <h2>Faltam poucos dias para começar a esperar o Natal juntos.</h2>
+    <p>O dia 1º chega rápido. Baixe o livro agora e comece na mesa da cozinha, com o café na mão.</p>
+    <div class="par-botoes">
+      <a class="btn" href="#" data-compra>Quero o meu · R$ 19,90</a>
+      <a class="btn-sec" href="#" data-amostra>Ver o dia 1 grátis</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="envol">
+    <p><strong>A Caminho de Belém</strong> · 24 dias de Natal em família, com a Bíblia.</p>
+    <p>Texto bíblico: Bíblia Livre (BLIVRE), CC BY 4.0 · uso pessoal e familiar · proibida a revenda.</p>
+    <p><a href="https://www.instagram.com/presepiodafamilia/" target="_blank" rel="noopener">@presepiodafamilia</a> · <a href="#" data-contato>Contato</a></p>
+  </div>
+</footer>
+
+<div class="fixo">
+  <a class="btn" href="#" data-compra>Quero o meu · R$ 19,90</a>
+</div>
+
+<script>
+/* =========================================================
+   CONFIGURAÇÃO — trocar aqui
+   ========================================================= */
+var LINK_DE_PAGAMENTO = "https://payfast.greenn.com.br/203114";
+var LINK_AMOSTRA_GRATIS = "amostra-dia-1.pdf";   // PDF do dia 1 (na mesma pasta)
+var EMAIL_DE_CONTATO = "contato@acaminhodebelem.com.br";
+
+/* Repassa UTM (e src/sck/fbclid) para o checkout */
+(function () {
+  var q = new URLSearchParams(window.location.search);
+  var carry = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','src','sck','fbclid'];
+  var extra = [];
+  carry.forEach(function (k) {
+    var v = q.get(k);
+    if (v) extra.push(encodeURIComponent(k) + '=' + encodeURIComponent(v));
+  });
+  var base = LINK_DE_PAGAMENTO;
+  var url = extra.length ? base + (base.indexOf('?') === -1 ? '?' : '&') + extra.join('&') : base;
+  document.querySelectorAll('[data-compra]').forEach(function (a) { a.setAttribute('href', url); });
+  document.querySelectorAll('[data-amostra]').forEach(function (a) { a.setAttribute('href', LINK_AMOSTRA_GRATIS); });
+  document.querySelectorAll('[data-contato]').forEach(function (a) {
+    a.setAttribute('href', 'mailto:' + EMAIL_DE_CONTATO);
+  });
+})();
+
+/* Botão fixo aparece depois do hero */
+(function () {
+  var hero = document.getElementById('topo');
+  if (!hero) return;
+  new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      document.body.classList.toggle('hero-compacta', !e.isIntersecting);
+    });
+  }, { threshold: 0, rootMargin: '-40% 0px 0px 0px' }).observe(hero);
+})();
+
+/* Vídeo só carrega quando aparece */
+(function () {
+  var v = document.querySelector('video');
+  if (!v) return;
+  var src = v.querySelector('source');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { src.setAttribute('src', src.getAttribute('src')); v.load(); io.disconnect(); }
+    });
+  }, { rootMargin: '200px' });
+  io.observe(v);
+})();
+</script>
+</body>
+</html>
