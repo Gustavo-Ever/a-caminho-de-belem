@@ -3,17 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>A Caminho de BelÃ©m Â· 24 dias de Natal em famÃ­lia</title>
-<meta name="description" content="Um calendÃ¡rio de Natal bÃ­blico para imprimir: 24 dias com histÃ³ria da BÃ­blia, versÃ­culo com gestos, perguntas, oraÃ§Ã£o e uma peÃ§a do presÃ©pio para pintar, recortar e montar. No dia 24 o presÃ©pio fica completo, feito pelo seu filho.">
+<title>A Caminho de Belém · 24 dias de Natal em família</title>
+<meta name="description" content="Um calendário de Natal bíblico para imprimir: 24 dias com história da Bíblia, versículo com gestos, perguntas, oração e uma peça do presépio para pintar, recortar e montar. No dia 24 o presépio fica completo, feito pelo seu filho.">
 <meta name="theme-color" content="#1f2a5a">
-<meta property="og:title" content="A Caminho de BelÃ©m Â· 24 dias de Natal em famÃ­lia">
-<meta property="og:description" content="No dia 24, o presÃ©pio fica completo, feito pelas mÃ£os do seu filho. PDF para imprimir, 10 minutos por dia, de 3 a 10 anos.">
+<meta property="og:title" content="A Caminho de Belém · 24 dias de Natal em família">
+<meta property="og:description" content="No dia 24, o presépio fica completo, feito pelas mãos do seu filho. PDF para imprimir, 10 minutos por dia, de 3 a 10 anos.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://gustavo-ever.github.io/a-caminho-de-belem/">
 <meta property="og:image" content="https://gustavo-ever.github.io/a-caminho-de-belem/assets/img/01_capa.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
-<link rel="icon" href="https://gustavo-ever.github.io/a-caminho-de-belem/assets/img/01_capa.webp">
+<link rel="icon" href="assets/img/01_capa.webp">
 
 <!-- PIXEL META AQUI -->
 <!-- UTMIFY AQUI -->
@@ -83,7 +84,7 @@ p{margin:0 0 1em;max-width:60ch}
 }
 .corte::before,
 .corte::after{
-  content:'âœ‚';
+  content:'✂';
   position:absolute;
   font-size:1.3rem;
   color:var(--terracota);
@@ -156,7 +157,7 @@ p{margin:0 0 1em;max-width:60ch}
 .btn:active{transform:translateY(4px);box-shadow:0 4px 0 #c8912c}
 .btn .preco{opacity:.72;font-weight:500}
 
-/* botÃ£o secundÃ¡rio: amostra grÃ¡tis */
+/* botão secundário: amostra grátis */
 .btn-sec{
   display:inline-flex;
   align-items:center;
@@ -177,6 +178,9 @@ p{margin:0 0 1em;max-width:60ch}
 }
 .btn-sec:hover{background:rgba(255,248,236,.12);border-color:var(--creme);transform:translateY(-2px)}
 .btn-sec:active{transform:translateY(1px)}
+/* botão secundário sobre fundo claro */
+.btn-sec.escuro{color:var(--texto);border-color:rgba(31,42,90,.35)}
+.btn-sec.escuro:hover{background:rgba(31,42,90,.06);border-color:var(--texto)}
 .par-botoes{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center}
 .mini{
   display:block;
@@ -193,9 +197,9 @@ p{margin:0 0 1em;max-width:60ch}
   font-size:.95rem;
   color:#d8d0ee;
 }
-.hero-stats span::before{content:'âœ¦';color:var(--dourado);margin-right:.45em}
+.hero-stats span::before{content:'✦';color:var(--dourado);margin-right:.45em}
 
-/* ============ SEÃ‡Ã•ES ============ */
+/* ============ SEÇÕES ============ */
 .secao{padding:56px 0}
 .secao.azul{background:var(--azul);color:var(--creme)}
 .secao.azul h2,.secao.azul h3{color:#fff}
@@ -240,9 +244,11 @@ p{margin:0 0 1em;max-width:60ch}
   box-shadow:var(--sombra);
   transform:rotate(var(--rot,0deg));
   transition:transform .18s ease;
+  margin:0;
 }
 .folha:hover{transform:rotate(0deg) translateY(-4px)}
 .folha img{border-radius:7px;box-shadow:0 4px 14px rgba(31,42,90,.16)}
+.folha a{display:block;text-decoration:none;color:inherit}
 .folha figcaption{
   font-family:'Fredoka',sans-serif;
   font-size:.98rem;
@@ -266,6 +272,7 @@ p{margin:0 0 1em;max-width:60ch}
 .etiqueta:nth-child(3){border-top-color:var(--azul-claro)}
 .etiqueta h3{font-size:1.08rem;margin-bottom:.35rem}
 .etiqueta p{margin:0;font-size:.95rem;color:var(--texto-suave)}
+.etiqueta .btn-sec{margin-top:14px;font-size:.95rem;padding:10px 18px}
 
 /* lista */
 .checklist{list-style:none;margin:0;padding:0;display:grid;gap:11px;max-width:62ch}
@@ -325,7 +332,7 @@ p{margin:0 0 1em;max-width:60ch}
   font-size:.86rem;
 }
 
-/* garantia */
+/* garantia e confiança */
 .garantia{
   background:var(--papel);
   border-radius:var(--raio);
@@ -337,6 +344,25 @@ p{margin:0 0 1em;max-width:60ch}
 }
 .garantia p{margin:0;font-size:1.05rem}
 .garantia .ico{font-size:1.8rem;display:block;margin-bottom:.3em}
+.garantia .como{display:block;margin-top:10px;font-size:.92rem;color:var(--texto-suave)}
+.confianca{
+  display:grid;
+  gap:14px;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  max-width:760px;
+  margin:18px auto 0;
+}
+.confianca div{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,211,107,.3);
+  border-radius:12px;
+  padding:14px 16px;
+  font-size:.92rem;
+  color:#dfe4f7;
+  text-align:center;
+}
+.confianca strong{display:block;font-family:'Fredoka',sans-serif;font-weight:500;color:#fff;margin-bottom:2px}
+.confianca a{color:#ffd36b}
 
 /* FAQ */
 .faq{max-width:760px;margin:0 auto}
@@ -366,8 +392,10 @@ summary::after{
   font-family:'Nunito',sans-serif;
   line-height:1;
 }
-details[open] summary::after{content:'â€“'}
+details[open] summary::after{content:'–'}
 details .resposta{padding:0 20px 20px;font-size:.98rem;color:var(--texto-suave)}
+details .resposta p{margin:0 0 .7em}
+details .resposta p:last-child{margin-bottom:0}
 details[open] summary{border-bottom:1px dashed var(--borda);margin-bottom:16px}
 
 /* chamada final */
@@ -379,8 +407,9 @@ details[open] summary{border-bottom:1px dashed var(--borda);margin-bottom:16px}
 }
 .final h2{color:#fff}
 .final p{color:#e4e7f6;margin-left:auto;margin-right:auto}
+.final .dias{font-family:'Fredoka',sans-serif;color:var(--dourado-claro)}
 
-/* rodapÃ© */
+/* rodapé */
 footer{
   background:#141b3d;
   color:#a9b0d6;
@@ -391,7 +420,7 @@ footer{
 footer a{color:#cdd3ee}
 footer p{margin:0 auto .5em;max-width:60ch}
 
-/* botÃ£o fixo mobile */
+/* botão fixo mobile */
 .fixo{
   display:none;
   position:fixed;
@@ -404,9 +433,9 @@ footer p{margin:0 auto .5em;max-width:60ch}
 }
 .fixo .btn{width:100%;box-shadow:0 5px 0 #c8912c}
 .hero-compacta .fixo{display:block}
-.hero-compacta{height:0;overflow:hidden}
+/* (removido: colapsava o body e quebrava a rolagem) */
 
-/* depoimentos: reservado */
+/* depoimentos: reservado (fica oculto até existirem depoimentos reais) */
 .depoimentos{
   border:2px dashed var(--borda);
   border-radius:var(--raio);
@@ -435,37 +464,71 @@ footer p{margin:0 auto .5em;max-width:60ch}
 <!-- ================= HERO ================= -->
 <header class="hero" id="topo">
   <div class="envol centro">
-    <span class="selo">de 1Âº a 24 de dezembro</span>
-    <h1>Esse ano, o presÃ©pio lÃ¡ de casa <span style="white-space:nowrap">quem monta Ã© ele.</span></h1>
-    <p class="sub">24 dias de Natal em famÃ­lia com a BÃ­blia: uma histÃ³ria e uma peÃ§a do presÃ©pio por dia. No dia 24, o presÃ©pio estÃ¡ completo, feito pelas mÃ£os do seu filho.</p>
+    <span class="selo">de 1º a 24 de dezembro</span>
+    <h1>Esse ano, o presépio lá de casa <span style="white-space:nowrap">quem monta é ele.</span></h1>
+    <p class="sub">24 dias de Natal em família com a Bíblia: uma história e uma peça do presépio por dia. No dia 24, o presépio está completo, feito pelas mãos do seu filho.</p>
 
-    <img class="livro" src="assets/img/01_capa.webp" width="794" height="1123" alt="Capa do livro A Caminho de BelÃ©m: 24 dias de Natal em famÃ­lia, com a BÃ­blia" fetchpriority="high">
+    <img class="livro" src="assets/img/01_capa.webp" width="794" height="1123" alt="Capa do livro A Caminho de Belém: 24 dias de Natal em família, com a Bíblia" fetchpriority="high">
 
     <div class="par-botoes">
-      <a class="btn" href="#" data-compra>Quero o meu por R$ 19,90</a>
-      <a class="btn-sec" href="#" data-amostra>Ver o dia 1 grÃ¡tis</a>
+      <a class="btn" href="https://payfast.greenn.com.br/203114" data-compra>Quero o meu por R$ 19,90</a>
+      <a class="btn-sec" href="amostra-dia-1.pdf" target="_blank" data-amostra>Ver o dia 1 grátis</a>
     </div>
-    <span class="mini">PDF para imprimir Â· imprima sÃ³ a pÃ¡gina do dia Â· acesso imediato no e-mail Â· garantia de 7 dias</span>
+    <span class="mini">PDF para imprimir · imprima só a página do dia · chega no e-mail logo depois do pagamento · garantia de 7 dias</span>
 
     <div class="hero-stats">
-      <span>131 pÃ¡ginas para imprimir</span>
+      <span>131 páginas para imprimir</span>
       <span>3 a 10 anos</span>
       <span>10 minutinhos por dia</span>
     </div>
   </div>
 </header>
 
-<!-- ================= VÃDEO ================= -->
-<section class="secao centro">
+<!-- ================= AMOSTRA: O DIA 1 INTEIRO ================= -->
+<section class="secao" id="amostra">
   <div class="envol">
-    <h2>Veja como funciona</h2>
-    <p class="nota" style="margin-bottom:22px">30 segundos para entender o que chega no seu e-mail.</p>
-    <div style="max-width:340px;margin:0 auto">
-      <video controls preload="none" playsinline poster="assets/video/poster.jpg"
-             style="width:100%;border-radius:14px;box-shadow:var(--sombra-forte)">
-        <source src="assets/video/explicativo.mp4" type="video/mp4">
-        Seu navegador nÃ£o reproduz este vÃ­deo.
-      </video>
+    <div class="corte centro">
+      <span class="selo" style="color:var(--terracota)">antes de comprar</span>
+      <h2>Abra o dia 1 inteiro. É grátis e não pede cadastro.</h2>
+      <p>São as páginas reais do PDF: a história, o versículo com gestos, as perguntas, a oração, a atividade e a primeira peça do presépio. Toque numa folha para abrir.</p>
+
+      <div class="folhas" style="text-align:left">
+        <figure class="folha" style="--rot:-1.8deg">
+          <a href="amostra-dia-1.pdf" target="_blank" data-amostra>
+            <img src="assets/img/d01_0_historia.webp" width="794" height="1123" loading="lazy" alt="Página de história do dia 1, com a figura do anjo Gabriel e Maria">
+            <figcaption>A história<small>para ler em voz alta</small></figcaption>
+          </a>
+        </figure>
+        <figure class="folha" style="--rot:1.4deg">
+          <a href="amostra-dia-1.pdf" target="_blank" data-amostra>
+            <img src="assets/img/d01_1_familia.webp" width="794" height="1124" loading="lazy" alt="Página do momento em família: versículo com gestos, perguntas e oração">
+            <figcaption>O momento em família<small>versículo, perguntas e oração</small></figcaption>
+          </a>
+        </figure>
+        <figure class="folha" style="--rot:-1.1deg">
+          <a href="amostra-dia-1.pdf" target="_blank" data-amostra>
+            <img src="assets/img/d01_2_colorir.webp" width="794" height="1124" loading="lazy" alt="Página de desenho para colorir do dia 1">
+            <figcaption>Colorir<small>para os pequenos</small></figcaption>
+          </a>
+        </figure>
+        <figure class="folha" style="--rot:1.9deg">
+          <a href="amostra-dia-1.pdf" target="_blank" data-amostra>
+            <img src="assets/img/d01_3_atividade.webp" width="794" height="1123" loading="lazy" alt="Página da atividade do dia 1">
+            <figcaption>A atividade<small>para os maiores</small></figcaption>
+          </a>
+        </figure>
+        <figure class="folha" style="--rot:-1.5deg">
+          <a href="amostra-dia-1.pdf" target="_blank" data-amostra>
+            <img src="assets/img/d01_4_peca.webp" width="794" height="1123" loading="lazy" alt="Página da peça do presépio do dia 1 para pintar e recortar">
+            <figcaption>A peça do dia<small>pinta, recorta, monta</small></figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="par-botoes" style="margin-top:28px">
+        <a class="btn" href="amostra-dia-1.pdf" target="_blank" data-amostra>Abrir o PDF do dia 1 grátis</a>
+      </div>
+      <p class="nota" style="margin:14px auto 0">Imprima e faça com a sua criança hoje. Se gostar, os outros 23 dias estão no livro completo.</p>
     </div>
   </div>
 </section>
@@ -475,54 +538,43 @@ footer p{margin:0 auto .5em;max-width:60ch}
   <div class="envol">
     <div class="centro">
       <span class="selo" style="color:var(--terracota)">como funciona</span>
-      <h2>10 minutos por dia, do 1Âº ao 24 de dezembro</h2>
-      <p class="nota">Cada dia tem a mesma rotina. VocÃª lÃª, vocÃªs conversam, ela pinta, e o presÃ©pio vai crescendo na mesa.</p>
+      <h2>10 minutos por dia, do 1º ao 24 de dezembro</h2>
+      <p class="nota">Cada dia tem a mesma rotina. Você lê, vocês conversam, ela pinta, e o presépio vai crescendo na mesa.</p>
     </div>
 
     <ol class="passos" style="margin-top:30px">
       <li>
         <span class="num">1</span>
-        <strong>Leia a histÃ³ria</strong>
-        <p>Uma narrativa bÃ­blica ilustrada, com as falas marcadas, para ler em voz alta antes de dormir.</p>
+        <strong>Leia a história</strong>
+        <p>Uma narrativa bíblica ilustrada, com as falas marcadas, para ler em voz alta antes de dormir.</p>
       </li>
       <li>
         <span class="num">2</span>
         <strong>Conversem e orem juntos</strong>
-        <p>Um versÃ­culo com gestos para decorar, duas perguntas para a conversa e uma oraÃ§Ã£o curta.</p>
+        <p>Um versículo com gestos para decorar, duas perguntas para a conversa e uma oração curta.</p>
       </li>
       <li>
         <span class="num">3</span>
-        <strong>Pinte ou faÃ§a a atividade</strong>
-        <p>Um desenho para colorir (3 a 6 anos) e uma atividade â€” caÃ§a-palavras, labirinto, palavras embaralhadas (7 a 10 anos).</p>
+        <strong>Pinte ou faça a atividade</strong>
+        <p>Um desenho para colorir (3 a 6 anos) e uma atividade: caça-palavras, labirinto, palavras embaralhadas (7 a 10 anos).</p>
       </li>
       <li>
         <span class="num">4</span>
-        <strong>Recorte a peÃ§a e monte o presÃ©pio</strong>
-        <p>Uma peÃ§a por dia: pintar, recortar, colar na mesa. No dia 24 ela Ã© o menino Jesus.</p>
+        <strong>Recorte a peça e monte o presépio</strong>
+        <p>Uma peça por dia: pintar, recortar, colar na mesa. No dia 24 ela é o menino Jesus.</p>
       </li>
     </ol>
 
-    <div class="folhas">
-      <figure class="folha" style="--rot:-1.8deg">
-        <img src="assets/img/d01_0_historia.webp" width="794" height="1123" loading="lazy" alt="PÃ¡gina de histÃ³ria do dia 1, com a figura do anjo Gabriel e Maria" >
-        <figcaption>A histÃ³ria<small>para ler em voz alta</small></figcaption>
-      </figure>
-      <figure class="folha" style="--rot:1.4deg">
-        <img src="assets/img/d01_1_familia.webp" width="794" height="1124" loading="lazy" alt="PÃ¡gina do momento em famÃ­lia: versÃ­culo com gestos, perguntas e oraÃ§Ã£o">
-        <figcaption>O momento em famÃ­lia<small>versÃ­culo, perguntas e oraÃ§Ã£o</small></figcaption>
-      </figure>
-      <figure class="folha" style="--rot:-1.1deg">
-        <img src="assets/img/d01_2_colorir.webp" width="794" height="1124" loading="lazy" alt="PÃ¡gina de desenho para colorir do dia 1">
-        <figcaption>Colorir<small>para os pequenos</small></figcaption>
-      </figure>
-      <figure class="folha" style="--rot:1.9deg">
-        <img src="assets/img/d01_3_atividade.webp" width="794" height="1123" loading="lazy" alt="PÃ¡gina da atividade do dia 1">
-        <figcaption>A atividade<small>para os maiores</small></figcaption>
-      </figure>
-      <figure class="folha" style="--rot:-1.5deg">
-        <img src="assets/img/d01_4_peca.webp" width="794" height="1123" loading="lazy" alt="PÃ¡gina da peÃ§a do presÃ©pio do dia 1 para pintar e recortar">
-        <figcaption>A peÃ§a do dia<small>pinta, recorta, monta</small></figcaption>
-      </figure>
+    <div class="centro" style="margin-top:30px">
+      <h3>Veja em 30 segundos</h3>
+      <p class="nota" style="margin-bottom:18px">O que chega no seu e-mail e como fica na mesa.</p>
+      <div style="max-width:340px;margin:0 auto">
+        <video controls preload="none" playsinline poster="assets/video/poster.jpg"
+               style="width:100%;border-radius:14px;box-shadow:var(--sombra-forte)">
+          <source src="assets/video/explicativo.mp4" type="video/mp4">
+          Seu navegador não reproduz este vídeo.
+        </video>
+      </div>
     </div>
   </div>
 </section>
@@ -532,21 +584,21 @@ footer p{margin:0 auto .5em;max-width:60ch}
   <div class="envol">
     <div class="corte centro">
       <span class="selo" style="color:var(--terracota)">no dia 24</span>
-      <h2>O presÃ©pio fica completo. Feito por ela.</h2>
-      <p>A manjedoura fica vazia atÃ© o Ãºltimo dia, quando entra o menino Jesus â€” com as mÃ£os da sua crianÃ§a.</p>
+      <h2>O presépio fica completo. Feito por ela.</h2>
+      <p>A manjedoura fica vazia até o último dia, quando entra o menino Jesus, com as mãos da sua criança.</p>
 
       <div style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:24px;text-align:center">
         <div>
-          <img src="assets/img/cena-presepio-completo.webp" width="1433" height="800" loading="lazy" alt="PresÃ©pio completo na manjedoura, com Maria, JosÃ©, o menino Jesus, os reis magos e os animais" style="border-radius:12px;box-shadow:var(--sombra)">
+          <img src="assets/img/cena-presepio-completo.webp" width="1433" height="800" loading="lazy" alt="Presépio completo na manjedoura, com Maria, José, o menino Jesus, os reis magos e os animais" style="border-radius:12px;box-shadow:var(--sombra)">
         </div>
         <div>
-          <img src="assets/img/04_mapa_presepio.webp" width="794" height="1123" loading="lazy" alt="Mapa das 24 peÃ§as do presÃ©pio, uma para cada dia de dezembro" style="border-radius:12px;box-shadow:var(--sombra);max-width:300px;margin:0 auto">
+          <img src="assets/img/04_mapa_presepio.webp" width="794" height="1123" loading="lazy" alt="Mapa das 24 peças do presépio, uma para cada dia de dezembro" style="border-radius:12px;box-shadow:var(--sombra);max-width:300px;margin:0 auto">
         </div>
       </div>
 
       <p style="margin:22px auto 0;max-width:56ch">
-        SÃ£o 24 peÃ§as, uma por dia: Maria, o anjo Gabriel, JosÃ©, o burrinho, o estÃ¡bulo, a manjedoura, o boi,
-        os pastores, as ovelhas, a estrela, os trÃªs magos, o cameloâ€¦ e, no Ãºltimo dia, o menino Jesus.
+        São 24 peças, uma por dia: Maria, o anjo Gabriel, José, o burrinho, o estábulo, a manjedoura, o boi,
+        os pastores, as ovelhas, a estrela, os três magos, o camelo… e, no último dia, o menino Jesus.
       </p>
     </div>
   </div>
@@ -557,134 +609,164 @@ footer p{margin:0 auto .5em;max-width:60ch}
   <div class="envol">
     <div class="centro">
       <span class="selo" style="color:var(--terracota)">o que vem no pdf</span>
-      <h2>Tudo isso, em 131 pÃ¡ginas</h2>
+      <h2>Tudo isso, em 131 páginas</h2>
     </div>
     <div style="display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));margin-top:28px;align-items:center">
       <div>
         <ul class="checklist">
-          <li>24 histÃ³rias bÃ­blicas ilustradas, da anunciÃ§Ã£o ao nascimento</li>
-          <li>24 versÃ­culos com gestos para decorar brincando</li>
+          <li>24 histórias bíblicas ilustradas, da anunciação ao nascimento</li>
+          <li>24 versículos com gestos para decorar brincando</li>
           <li>24 desenhos para colorir</li>
-          <li>24 atividades: caÃ§a-palavras, labirinto, palavras embaralhadas e verdadeiro ou falso</li>
-          <li>24 peÃ§as do presÃ©pio para pintar, recortar e montar</li>
-          <li>PÃ¡gina de "como usar" e plano dos 24 dias</li>
-          <li>Certificado de "presÃ©pio completo" e gabarito das atividades</li>
+          <li>24 atividades: caça-palavras, labirinto, palavras embaralhadas e verdadeiro ou falso</li>
+          <li>24 peças do presépio para pintar, recortar e montar</li>
+          <li>Página de "como usar" e plano dos 24 dias</li>
+          <li>Certificado de "presépio completo" e gabarito das atividades</li>
         </ul>
+        <p class="nota" style="margin-top:18px">Texto bíblico da Bíblia Livre, sem termos de uma denominação só. Serve para família católica e evangélica.</p>
       </div>
       <div>
-        <img src="assets/img/03_plano.webp" width="794" height="1124" loading="lazy" alt="PÃ¡gina com o plano dos 24 dias de dezembro" style="border-radius:12px;box-shadow:var(--sombra);max-width:320px;margin:0 auto">
-        <img src="assets/img/97_certificado.webp" width="794" height="1124" loading="lazy" alt="Certificado de presÃ©pio completo para a crianÃ§a" style="border-radius:12px;box-shadow:var(--sombra);max-width:320px;margin:16px auto 0;transform:rotate(1.4deg)">
+        <img src="assets/img/03_plano.webp" width="794" height="1124" loading="lazy" alt="Página com o plano dos 24 dias de dezembro" style="border-radius:12px;box-shadow:var(--sombra);max-width:320px;margin:0 auto">
+        <img src="assets/img/97_certificado.webp" width="794" height="1124" loading="lazy" alt="Certificado de presépio completo para a criança" style="border-radius:12px;box-shadow:var(--sombra);max-width:320px;margin:16px auto 0;transform:rotate(1.4deg)">
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= PARA QUEM Ã‰ ================= -->
+<!-- ================= PARA QUEM É ================= -->
 <section class="secao">
   <div class="envol">
     <div class="centro">
-      <span class="selo" style="color:var(--terracota)">para quem Ã©</span>
+      <span class="selo" style="color:var(--terracota)">para quem é</span>
       <h2>Feito para a mesa da sua casa</h2>
     </div>
 
     <div class="etiquetas">
       <div class="etiqueta">
-        <h3>MÃ£es e pais</h3>
+        <h3>Mães e pais</h3>
         <p>Que querem um Natal com mais Jesus e menos tela, sem precisar planejar 24 dias de atividade.</p>
       </div>
       <div class="etiqueta">
-        <h3>AvÃ³s e madrinhas</h3>
+        <h3>Avós e madrinhas</h3>
         <p>Que querem dar um presente que dura 24 dias, em vez de mais uma coisa embrulhada.</p>
       </div>
       <div class="etiqueta">
-        <h3>Tias do ministÃ©rio e catequistas</h3>
-        <p>HÃ¡ uma versÃ£o com licenÃ§a para a turma toda, disponÃ­vel no checkout.</p>
+        <h3>Tias do ministério, EBD e catequese</h3>
+        <p>O PDF comum é de uso familiar. Para usar com a turma inteira existe o Kit Turma, com licença para a sala, por R$ 27.</p>
+        <a class="btn-sec escuro" href="https://payfast.greenn.com.br/203114" data-turma>Quero o Kit Turma · R$ 27</a>
       </div>
     </div>
 
     <div style="margin-top:30px;text-align:center">
-      <img src="assets/img/cena-familia-montando.webp" width="1433" height="800" loading="lazy" alt="FamÃ­lia montando o presÃ©pio de papel na mesa, ao lado da Ã¡rvore de Natal" style="width:100%;border-radius:14px;box-shadow:var(--sombra);max-width:760px;margin:0 auto">
-      <p class="nota" style="margin-top:14px">Uma histÃ³ria por dia, uma peÃ§a por dia, e a mesa vai crescendo.</p>
+      <img src="assets/img/cena-familia-montando.webp" width="1433" height="800" loading="lazy" alt="Família montando o presépio de papel na mesa, ao lado da árvore de Natal" style="width:100%;border-radius:14px;box-shadow:var(--sombra);max-width:760px;margin:0 auto">
+      <p class="nota" style="margin-top:14px">Uma história por dia, uma peça por dia, e a mesa vai crescendo.</p>
     </div>
   </div>
 </section>
 
 <!-- ================= OFERTA ================= -->
-<section class="secao azul">
+<section class="secao azul" id="oferta">
   <div class="envol">
     <div class="oferta">
-      <img class="capa" src="assets/img/01_capa.webp" width="794" height="1123" loading="lazy" alt="Capa do livro A Caminho de BelÃ©m">
-      <h3 style="margin:0">A Caminho de BelÃ©m Â· PDF completo</h3>
-      <div class="preco">R$ 19,90<span>pagamento Ãºnico Â· sem mensalidade</span></div>
+      <img class="capa" src="assets/img/01_capa.webp" width="794" height="1123" loading="lazy" alt="Capa do livro A Caminho de Belém">
+      <h3 style="margin:0">A Caminho de Belém · PDF completo</h3>
+      <div class="preco">R$ 19,90<span>pagamento único · dá menos de R$ 1 por dia (R$ 19,90 ÷ 24 dias)</span></div>
       <div class="selos">
-        <span>Pix ou cartÃ£o</span>
-        <span>Acesso imediato no e-mail</span>
+        <span>Pix ou cartão</span>
+        <span>Chega no e-mail logo após o pagamento</span>
         <span>Garantia de 7 dias</span>
       </div>
       <div class="par-botoes">
-        <a class="btn" href="#" data-compra>Quero comeÃ§ar dia 1Âº de dezembro</a>
-        <a class="btn-sec" href="#" data-amostra>Antes, ver o dia 1 grÃ¡tis</a>
+        <a class="btn" href="https://payfast.greenn.com.br/203114" data-compra>Quero começar dia 1º de dezembro</a>
+        <a class="btn-sec" href="amostra-dia-1.pdf" target="_blank" data-amostra>Antes, ver o dia 1 grátis</a>
       </div>
     </div>
 
     <div class="garantia" style="margin-top:26px">
-      <span class="ico">ðŸ¤</span>
-      <p><strong>Garantia de 7 dias.</strong> Se em 7 dias vocÃª achar que nÃ£o Ã© pra sua famÃ­lia, devolvemos 100% do valor. Sem perguntas.</p>
+      <span class="ico">🤍</span>
+      <p><strong>Garantia de 7 dias.</strong> Se em 7 dias você achar que não é pra sua família, devolvemos 100% do valor. Sem perguntas.</p>
+      <span class="como">É só pedir por e-mail ou direto na Greenn, em reclamacao.greenn.com.br. No Pix, o dinheiro volta na hora.</span>
+    </div>
+
+    <div class="confianca">
+      <div>
+        <strong>Quem faz e vende</strong>
+        Gustavo Silva, autor do livro. O nome é o mesmo que aparece no checkout.
+      </div>
+      <div>
+        <strong>Como você recebe</strong>
+        A Greenn envia um e-mail com o botão para baixar o PDF logo depois do pagamento aprovado.
+      </div>
+      <div>
+        <strong>Fale com a gente</strong>
+        <a href="mailto:contato@acaminhodebelem.com.br" data-contato>contato@acaminhodebelem.com.br</a><br>
+        <a href="https://www.instagram.com/presepiodafamilia/" target="_blank" rel="noopener">@presepiodafamilia</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= DEPOIMENTOS (RESERVADO) ================= -->
+<!-- ================= DEPOIMENTOS (RESERVADO, OCULTO) =================
+     Quando houver depoimentos reais e autorizados, substituir este comentário
+     pelo bloco abaixo. Nunca publicar depoimento inventado.
+
 <section class="secao" style="padding-top:0">
   <div class="envol">
-    <!-- depoimentos reais entram aqui depois -->
     <div class="depoimentos">
-      <strong>Quem jÃ¡ usou vai contando aqui</strong>
-      As primeiras famÃ­lias que receberam o livro estÃ£o chegando. Quando elas autorizarem, os depoimentos entram nesta parte.
+      <strong>Quem já usou vai contando aqui</strong>
+      (depoimento real, com nome e cidade, autorizado por escrito)
     </div>
   </div>
 </section>
+-->
 
 <!-- ================= FAQ ================= -->
 <section class="secao" style="background:var(--creme-2)">
   <div class="envol">
     <div class="centro" style="margin-bottom:26px">
       <span class="selo" style="color:var(--terracota)">perguntas frequentes</span>
-      <h2>DÃºvidas de mÃ£e para mÃ£e</h2>
+      <h2>As perguntas que as mães mais fazem</h2>
     </div>
 
     <div class="faq">
       <details open>
-        <summary>Ã‰ fÃ­sico?</summary>
-        <div class="resposta">NÃ£o. Ã‰ um PDF que vocÃª recebe no e-mail logo apÃ³s o pagamento e imprime em casa ou numa grÃ¡fica rÃ¡pida.</div>
-      </details>
-      <details>
         <summary>Vai sair caro para imprimir?</summary>
-        <div class="resposta">NÃ£o precisa imprimir o livro inteiro. VocÃª imprime <strong>sÃ³ a pÃ¡gina do dia</strong> â€” a histÃ³ria, o versÃ­culo e a peÃ§a do presÃ©pio daquele dia. SÃ£o umas 3 a 4 folhas por dia, e no dia 24 Ã© sÃ³ a Ãºltima. TambÃ©m funciona em preto e branco. E se nÃ£o tiver impressora, dÃ¡ para imprimir na papelaria perto de casa, ou atÃ© no trabalho, do jeito que for mais fÃ¡cil.</div>
+        <div class="resposta">
+          <p>Você não imprime o livro inteiro de uma vez. Imprime <strong>só o dia</strong>: a história, a página da família, o desenho ou a atividade da idade da sua criança e a peça do presépio. São <strong>4 folhas por dia</strong> (ou 2, se imprimir frente e verso).</p>
+          <p>Em 24 dias dá cerca de 96 folhas: mais ou menos um pacote de 100 folhas de sulfite. Tudo funciona em preto e branco, porque a cor vem do lápis da criança.</p>
+          <p>Sem impressora em casa? Leve o PDF do dia no celular à papelaria, ou imprima a semana de uma vez no trabalho.</p>
+        </div>
       </details>
       <details>
         <summary>Preciso de impressora colorida?</summary>
-        <div class="resposta">NÃ£o. Funciona em preto e branco; as peÃ§as e os desenhos sÃ£o para pintar, entÃ£o a cor sai do lÃ¡pis da crianÃ§a.</div>
+        <div class="resposta">Não. As peças e os desenhos são para pintar; as histórias ficam bem em preto e branco também.</div>
       </details>
       <details>
-        <summary>Serve para catÃ³licos e evangÃ©licos?</summary>
-        <div class="resposta">Sim. Conta a histÃ³ria do nascimento de Jesus como estÃ¡ na BÃ­blia, sem termos de uma denominaÃ§Ã£o sÃ³. O texto bÃ­blico Ã© da BÃ­blia Livre (CC BY 4.0).</div>
+        <summary>É um livro físico?</summary>
+        <div class="resposta">Não. É um PDF de 131 páginas, em A4. Você recebe no e-mail logo depois do pagamento e imprime em casa, na papelaria ou numa gráfica rápida.</div>
       </details>
       <details>
         <summary>Qual idade?</summary>
-        <div class="resposta">De 3 a 10 anos. Os menores colorem e os maiores fazem as atividades e leem junto com vocÃª.</div>
+        <div class="resposta">De 3 a 10 anos. Os menores colorem e montam; os maiores fazem as atividades e leem junto com você. Cada dia tem uma página para cada faixa.</div>
       </details>
       <details>
-        <summary>E se eu comeÃ§ar depois do dia 1Âº?</summary>
-        <div class="resposta">Sem problema: dÃ¡ para fazer 2 dias juntos atÃ© alcanÃ§ar o ritmo.</div>
+        <summary>Serve para católicos e evangélicos?</summary>
+        <div class="resposta">Sim. Conta a história do nascimento de Jesus como está na Bíblia, sem termos de uma denominação só. O texto bíblico é da Bíblia Livre (CC BY 4.0).</div>
+      </details>
+      <details>
+        <summary>E se eu começar depois do dia 1º?</summary>
+        <div class="resposta">Sem problema: dá para fazer 2 dias juntos até alcançar o ritmo. O presépio fica completo do mesmo jeito.</div>
       </details>
       <details>
         <summary>Posso usar com a turma da igreja ou da escola?</summary>
-        <div class="resposta">O PDF Ã© para uso familiar. Para turma hÃ¡ a licenÃ§a do Kit Turma, oferecida no checkout.</div>
+        <div class="resposta">O PDF comum é de uso familiar. Para a sala inteira existe o <strong>Kit Turma</strong>, com licença para usar com a turma, por R$ 27. O botão está na seção "para quem é", logo acima.</div>
       </details>
       <details>
         <summary>Como recebo?</summary>
-        <div class="resposta">Por e-mail, na hora, depois do Pix ou cartÃ£o aprovado.</div>
+        <div class="resposta">Por e-mail, logo depois do Pix ou do cartão aprovado. O e-mail vem da Greenn, a plataforma de pagamento, com o botão para baixar. Se não achar, olhe o spam.</div>
+      </details>
+      <details>
+        <summary>E se eu não gostar?</summary>
+        <div class="resposta">Você tem 7 dias para pedir o dinheiro de volta, por e-mail ou direto na Greenn (reclamacao.greenn.com.br). No Pix, volta na hora; no cartão, aparece como estorno na fatura.</div>
       </details>
     </div>
   </div>
@@ -693,54 +775,164 @@ footer p{margin:0 auto .5em;max-width:60ch}
 <!-- ================= CHAMADA FINAL ================= -->
 <section class="secao final">
   <div class="envol">
-    <h2>Faltam poucos dias para comeÃ§ar a esperar o Natal juntos.</h2>
-    <p>O dia 1Âº chega rÃ¡pido. Baixe o livro agora e comece na mesa da cozinha, com o cafÃ© na mÃ£o.</p>
+    <h2 data-final-titulo>Faltam poucos dias para começar a esperar o Natal juntos.</h2>
+    <p data-final-texto>O dia 1º chega rápido. Baixe o livro agora e comece na mesa da cozinha, com o café na mão.</p>
     <div class="par-botoes">
-      <a class="btn" href="#" data-compra>Quero o meu Â· R$ 19,90</a>
-      <a class="btn-sec" href="#" data-amostra>Ver o dia 1 grÃ¡tis</a>
+      <a class="btn" href="https://payfast.greenn.com.br/203114" data-compra>Quero o meu · R$ 19,90</a>
+      <a class="btn-sec" href="amostra-dia-1.pdf" target="_blank" data-amostra>Ver o dia 1 grátis</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="envol">
-    <p><strong>A Caminho de BelÃ©m</strong> Â· 24 dias de Natal em famÃ­lia, com a BÃ­blia.</p>
-    <p>Texto bÃ­blico: BÃ­blia Livre (BLIVRE), CC BY 4.0 Â· uso pessoal e familiar Â· proibida a revenda.</p>
-    <p><a href="https://www.instagram.com/presepiodafamilia/" target="_blank" rel="noopener">@presepiodafamilia</a> Â· <a href="#" data-contato>Contato</a></p>
+    <p><strong>A Caminho de Belém</strong> · 24 dias de Natal em família, com a Bíblia.</p>
+    <p>Feito e vendido por Gustavo Silva · pagamento processado pela Greenn Pagamentos S.A.</p>
+    <p>Texto bíblico: Bíblia Livre (BLIVRE), CC BY 4.0 · uso pessoal e familiar · proibida a revenda.</p>
+    <p><a href="https://www.instagram.com/presepiodafamilia/" target="_blank" rel="noopener">@presepiodafamilia</a> · <a href="mailto:contato@acaminhodebelem.com.br" data-contato>contato@acaminhodebelem.com.br</a></p>
   </div>
 </footer>
 
 <div class="fixo">
-  <a class="btn" href="#" data-compra>Quero o meu Â· R$ 19,90</a>
+  <a class="btn" href="https://payfast.greenn.com.br/203114" data-compra>Quero o meu · R$ 19,90</a>
 </div>
 
 <script>
 /* =========================================================
-   CONFIGURAÃ‡ÃƒO â€” trocar aqui
+   CONFIGURAÇÃO — trocar aqui
    ========================================================= */
 var LINK_DE_PAGAMENTO = "https://payfast.greenn.com.br/203114";
-var LINK_AMOSTRA_GRATIS = "amostra-dia-1.pdf";   // PDF do dia 1 (na mesma pasta)
+var LINK_KIT_TURMA    = "";                     // link da oferta Kit Turma (R$ 27). Vazio = usa o checkout principal.
+var LINK_AMOSTRA_GRATIS = "amostra-dia-1.pdf";  // PDF do dia 1 (na mesma pasta)
 var EMAIL_DE_CONTATO = "contato@acaminhodebelem.com.br";
 
-/* Repassa UTM (e src/sck/fbclid) para o checkout */
+/* =========================================================
+   RASTREIO — captura utm_*, src, sck e fbclid da URL,
+   guarda no navegador (30 dias) e reescreve os links de
+   compra da Greenn com esses parâmetros.
+   Os hrefs já vêm preenchidos no HTML; sem JS o botão funciona.
+   Para depurar: abra o console e digite ACB_RASTREIO
+   ========================================================= */
 (function () {
+  var CHAVES = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'src', 'sck', 'fbclid'];
+  var ARMAZEM = 'acb_rastreio_v1';
+  var VALIDADE_MS = 30 * 24 * 60 * 60 * 1000;   // 30 dias
+
+  function ler(tipo) {
+    try { var s = window[tipo].getItem(ARMAZEM); return s ? JSON.parse(s) : null; } catch (e) { return null; }
+  }
+  function gravar(tipo, obj) {
+    try { window[tipo].setItem(ARMAZEM, JSON.stringify(obj)); } catch (e) {}
+  }
+  function limpo(v) {
+    return String(v).replace(/[<>"'`]/g, '').trim().slice(0, 200);
+  }
+
+  /* 1. O que veio na URL agora */
   var q = new URLSearchParams(window.location.search);
-  var carry = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','src','sck','fbclid'];
-  var extra = [];
-  carry.forEach(function (k) {
+  var daUrl = {};
+  var temAlgo = false;
+  CHAVES.forEach(function (k) {
     var v = q.get(k);
-    if (v) extra.push(encodeURIComponent(k) + '=' + encodeURIComponent(v));
+    if (v) { daUrl[k] = limpo(v); temAlgo = true; }
   });
-  var base = LINK_DE_PAGAMENTO;
-  var url = extra.length ? base + (base.indexOf('?') === -1 ? '?' : '&') + extra.join('&') : base;
-  document.querySelectorAll('[data-compra]').forEach(function (a) { a.setAttribute('href', url); });
+
+  /* 2. Sem utm_source na URL: deduz a origem pelo referrer */
+  if (!daUrl.utm_source && document.referrer) {
+    var host = '';
+    try { host = new URL(document.referrer).hostname.toLowerCase(); } catch (e) {}
+    var mapa = [
+      ['instagram.com', 'instagram'],
+      ['facebook.com',  'facebook'],
+      ['fb.com',        'facebook'],
+      ['messenger.com', 'facebook'],
+      ['pinterest',     'pinterest'],
+      ['whatsapp.com',  'whatsapp'],
+      ['t.co',          'x'],
+      ['google.',       'google'],
+      ['youtube.com',   'youtube']
+    ];
+    for (var i = 0; i < mapa.length; i++) {
+      if (host.indexOf(mapa[i][0]) !== -1) {
+        daUrl.utm_source   = mapa[i][1];
+        daUrl.utm_medium   = daUrl.utm_medium   || 'referral';
+        daUrl.utm_campaign = daUrl.utm_campaign || 'sem-utm';
+        temAlgo = true;
+        break;
+      }
+    }
+  }
+
+  /* 3. Guarda: sessionStorage (aba atual) + localStorage (30 dias) */
+  var agora = Date.now();
+  var guardado = ler('sessionStorage') || ler('localStorage');
+  if (guardado && guardado.t && (agora - guardado.t) > VALIDADE_MS) guardado = null;
+
+  var origem;
+  if (temAlgo) {
+    daUrl.t = agora;
+    origem = daUrl;
+    gravar('sessionStorage', origem);
+    gravar('localStorage', origem);
+  } else {
+    origem = guardado || {};
+  }
+
+  /* 4. Monta a URL do checkout com os parâmetros e reescreve os botões */
+  function comParametros(base) {
+    var partes = [];
+    CHAVES.forEach(function (k) {
+      if (origem[k]) partes.push(encodeURIComponent(k) + '=' + encodeURIComponent(origem[k]));
+    });
+    if (!partes.length) return base;
+    return base + (base.indexOf('?') === -1 ? '?' : '&') + partes.join('&');
+  }
+
+  var urlCheckout = comParametros(LINK_DE_PAGAMENTO);
+  var urlTurma    = comParametros(LINK_KIT_TURMA || LINK_DE_PAGAMENTO);
+  document.querySelectorAll('[data-compra]').forEach(function (a) { a.setAttribute('href', urlCheckout); });
+  document.querySelectorAll('[data-turma]').forEach(function (a) { a.setAttribute('href', urlTurma); });
   document.querySelectorAll('[data-amostra]').forEach(function (a) { a.setAttribute('href', LINK_AMOSTRA_GRATIS); });
   document.querySelectorAll('[data-contato]').forEach(function (a) {
     a.setAttribute('href', 'mailto:' + EMAIL_DE_CONTATO);
+    if (a.textContent.indexOf('@') !== -1) a.textContent = EMAIL_DE_CONTATO;
   });
+
+  /* 5. Segurança extra: se algum script futuro trocar o href, reaplica no clique */
+  document.addEventListener('click', function (ev) {
+    var a = ev.target && ev.target.closest ? ev.target.closest('[data-compra]') : null;
+    if (a && a.getAttribute('href') !== urlCheckout) a.setAttribute('href', urlCheckout);
+  }, true);
+
+  window.ACB_RASTREIO = origem;
 })();
 
-/* BotÃ£o fixo aparece depois do hero */
+/* Contagem real de dias até 1º de dezembro (nada de urgência inventada) */
+(function () {
+  var t = document.querySelector('[data-final-titulo]');
+  var p = document.querySelector('[data-final-texto]');
+  if (!t || !p) return;
+  var hoje = new Date();
+  var ano = hoje.getFullYear();
+  var dia1 = new Date(ano, 11, 1);
+  var dia24 = new Date(ano, 11, 24);
+  var umDia = 24 * 60 * 60 * 1000;
+  var h0 = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate());
+  var faltam = Math.round((dia1 - h0) / umDia);
+  if (faltam > 1) {
+    t.innerHTML = 'Faltam <span class="dias">' + faltam + ' dias</span> para o 1º de dezembro.';
+    p.textContent = 'Dá tempo de imprimir o dia 1 com calma e começar junto. Baixe o livro agora e deixe a primeira peça pronta na mesa.';
+  } else if (faltam === 1) {
+    t.innerHTML = 'O 1º de dezembro é <span class="dias">amanhã</span>.';
+    p.textContent = 'Baixe agora, imprima o dia 1 hoje à noite e comece junto.';
+  } else if (h0 <= dia24) {
+    var atras = -faltam + 1;
+    t.innerHTML = 'Dezembro já começou: hoje é o dia <span class="dias">' + atras + '</span> do caminho.';
+    p.textContent = 'Dá para fazer 2 dias juntos e alcançar o ritmo. O presépio fica completo no dia 24 do mesmo jeito.';
+  }
+})();
+
+/* Botão fixo aparece depois do hero */
 (function () {
   var hero = document.getElementById('topo');
   if (!hero) return;
@@ -751,7 +943,7 @@ var EMAIL_DE_CONTATO = "contato@acaminhodebelem.com.br";
   }, { threshold: 0, rootMargin: '-40% 0px 0px 0px' }).observe(hero);
 })();
 
-/* VÃ­deo sÃ³ carrega quando aparece */
+/* Vídeo só carrega quando aparece */
 (function () {
   var v = document.querySelector('video');
   if (!v) return;
